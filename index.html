@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-family: serif;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row input, .row select {
+            flex: 1;
+        }
+
+        .radio-group {
+            margin-top: 10px;
+        }
+
+        .submit-btn {
+            background: black;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            margin-top: 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .checkbox {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact</h1>
+
+    <form>
+        <label>First name</label>
+        <input type="text">
+
+        <label>Last name</label>
+        <input type="text">
+
+        <label>Phone</label>
+        <input type="text">
+
+        <label>Date and time</label>
+
+        <div class="row">
+            <input type="text" placeholder="Day">
+            <select>
+                <option>Month</option>
+            </select>
+            <input type="text" placeholder="Year">
+            <input type="time">
+        </div>
+
+        <label>Seating preference</label>
+        <div class="radio-group">
+            <input type="radio" name="seat"> Indoor<br>
+            <input type="radio" name="seat"> Outdoor
+        </div>
+
+        <label>Additional requests</label>
+        <textarea rows="3"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox"> Yes, subscribe me to your newsletter.
+        </div>
+
+        <button class="submit-btn">Request booking</button>
+    </form>
+
+</body>
+</html>
