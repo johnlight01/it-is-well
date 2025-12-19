@@ -1,24 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0.15);
+    width: 400px;
+}
 h1{
-    color: red;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    /* text-align: center; */
+    margin-bottom: 20px;
+    color:#333;
 }
-p{
-    color: blue;
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+table{
+    width: 100px;
+    border-spacing: 0 12px;
 }
+label{
+    font-weight: bold;
+    color:#444;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 200px;
+    padding:8px 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
 
-h2{
-    color: red;
-    font-size: 25px;
    
 }
-h3{
-    color: red;
+input:focus{
+    border-color: #007bff;
 }
-h4{
-    color: red;
-    
+
+button{
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button: hover{
+    background-color:#00
 }
